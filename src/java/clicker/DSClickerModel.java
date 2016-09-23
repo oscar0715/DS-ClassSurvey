@@ -20,6 +20,7 @@ public class DSClickerModel {
     }
     
     public void submitAnswer(String answer){
+        // add the answer to the map
         if (answerMap.containsKey(answer)) {
             answerMap.put(answer, answerMap.get(answer) + 1);
         } else {

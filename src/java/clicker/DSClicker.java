@@ -36,38 +36,34 @@ public class DSClicker extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
+
         // get Servlet Path
         String path = request.getServletPath();
-        System.out.println(path);
-        if(path.equals("/backToIndex")){
-            System.out.println("index.jsp");
+        if (path.equals("/backToIndex")) {
             RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
             return;
         }
         // get results from model
         Map<String, Integer> answerMap = model.getResults();
-        
+
         // store results into request
         request.setAttribute("answerMap", answerMap);
-        
+
         // redict to result.jsp
         String nextView = "result.jsp";
         RequestDispatcher view = request.getRequestDispatcher(nextView);
         view.forward(request, response);
-        
+
         // reset results
         this.model = new DSClickerModel();
 
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
-     * get answer from the brower
+     * Handles the HTTP <code>POST</code> method. get answer from the brower
      * save the answer into the Model
-     * 
+     *
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -76,21 +72,20 @@ public class DSClicker extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
+
         // get answer from the brower
         String answer = request.getParameter("answer");
-        
+
         // store the answer into model
         model.submitAnswer(answer);
-        
+
         // store the answer into request
         request.setAttribute("response", answer);
-        
+
         // redict to next.jsp
         String nextView = "next.jsp";
         RequestDispatcher view = request.getRequestDispatcher(nextView);
         view.forward(request, response);
-       
+
     }
 }

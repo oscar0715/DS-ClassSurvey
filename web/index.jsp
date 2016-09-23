@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        
+
         <!--Using the viewport meta tag to control layout on mobile browsers-->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrapValidator.min.css" rel="stylesheet">
-        
+
         <title>DS Clicker</title>
     </head>
     <body>       
@@ -17,8 +17,8 @@
                 <div class="col-xs-1"></div>
                 <div class="col-xs-10">
                     <div class="page-header">
-                            <h1>Distributed System Class Clicker</h1>
-                            <h1><small>Submit your answer to the current question:</small></h1>
+                        <h1>Distributed System Class Clicker</h1>
+                        <h1><small>Submit your answer to the current question:</small></h1>
                     </div>
 
                     <div class="row">
@@ -49,19 +49,19 @@
                 <div class="col-xs-1"></div>
             </div>
         </div>
-        
-        <footer class="footer navbar-fixed-bottom">
+
+        <!--<footer class="footer navbar-fixed-bottom">
             <div class="container">
                 <p class="text-capitalize">Produced by Jiaming NI</p>
             </div>
-        </footer>
-	<!-- jQuery -->
-	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        </footer>-->
+        <!-- jQuery -->
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
         <script src="js/bootstrapValidator.min.js"></script>
-     
+
     </body>
 </html>
