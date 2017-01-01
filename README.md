@@ -1,6 +1,8 @@
 # DS-ClassSurvey
 Simple Web Application using MVC model. #Java
 
+Netbeans + JSP + bootstrap
+
 一个简单的投票系统
 
 采用 MVC 模式：
